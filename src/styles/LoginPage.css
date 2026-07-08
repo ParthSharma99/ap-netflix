@@ -1,0 +1,115 @@
+/* ─── Login Page ─────────────────────────────────────────────── */
+.login-page {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95c0-914f44d53991/a3873901-5b7c-46eb-b9fa-12fea5197bd3/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+    no-repeat center center / cover;
+}
+
+.login-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.login-nav {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 24px 48px;
+}
+
+.nav-logo-text {
+  font-size: 48px;
+  font-weight: 900;
+  color: #e50914;
+  letter-spacing: -2px;
+}
+
+.nav-logo-img {
+  height: 48px;
+  object-fit: contain;
+}
+
+/* ── Card ── */
+.login-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 60px 68px;
+  width: 100%;
+  max-width: 450px;
+  margin-top: 40px;
+}
+
+.login-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+/* ── Form ── */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-input {
+  background: #333;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 16px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+.login-input:focus {
+  background: #454545;
+}
+
+.login-input::placeholder {
+  color: #8c8c8c;
+}
+
+.login-error {
+  color: #e87c03;
+  font-size: 14px;
+  padding: 4px 0;
+}
+
+.login-btn {
+  background: #e50914;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: #f40612;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login-hint {
+  color: #737373;
+  font-size: 13px;
+  margin-top: 20px;
+  text-align: center;
+}
