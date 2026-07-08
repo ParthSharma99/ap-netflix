@@ -23,11 +23,14 @@ export default function MediaCard({ item, onClick }) {
             {item.type === "video" ? "▶" : "🖼"}
           </div>
         )}
-        {item.type === "video" && (
-          <div className="media-card-play-icon">▶</div>
-        )}
+
+        {/* Hover overlay */}
+        <div className="media-card-overlay">
+          {item.type === "video" && (
+            <div className="media-card-play-icon">▶</div>
+          )}
+        </div>
       </div>
-      <p className="media-card-title">{item.title}</p>
     </div>
   );
 }
