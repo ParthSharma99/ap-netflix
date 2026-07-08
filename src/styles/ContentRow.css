@@ -1,0 +1,29 @@
+/* ─── Content Row ───────────────────────────────────────────── */
+.content-row {
+  padding: 0 48px 40px;
+}
+
+.content-row-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #e5e5e5;
+  margin-bottom: 12px;
+}
+
+.content-row-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}
+
+.content-row-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.content-row-scroll::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 2px;
+}
