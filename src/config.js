@@ -6,10 +6,11 @@
 
 // ── Authentication ───────────────────────────────────────────
 // Single set of login credentials. No sign-up is allowed.
-// Change these values to set your own username / password.
+// ⚠️  IMPORTANT: Change both values before deploying publicly.
+//     Use a strong password (uppercase + lowercase + numbers + symbols).
 export const AUTH = {
   username: "admin",
-  password: "netflix2025",
+  password: "Ch@ngeMe#2025!",
 };
 
 // ── Site Branding ─────────────────────────────────────────────

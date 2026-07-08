@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../styles/MediaModal.css";
 
 export default function MediaModal({ item, onClose }) {
