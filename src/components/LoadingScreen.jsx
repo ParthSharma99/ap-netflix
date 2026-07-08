@@ -18,9 +18,9 @@ export default function LoadingScreen({ onFinish }) {
     <div className={`loading-screen${fadeOut ? " fade-out" : ""}`}>
       <div className="loading-n-wrap">
         {/* Back layer – unlit N */}
-        <span className="loading-n loading-n-back">{SITE.logoText}</span>
+        <span className="loading-n loading-n-back">{SITE.logoText.charAt(0)}</span>
         {/* Front layer – lit N, revealed left → right */}
-        <span className="loading-n loading-n-front">{SITE.logoText}</span>
+        <span className="loading-n loading-n-front">{SITE.logoText.charAt(0)}</span>
         {/* Shine beam that sweeps left → right */}
         <div className="loading-n-shine" />
       </div>
