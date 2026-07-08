@@ -6,8 +6,8 @@ export default function LoadingScreen({ onFinish }) {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    const hold = setTimeout(() => setFadeOut(true), 2200);
-    const done = setTimeout(() => onFinish(), 2800);
+    const hold = setTimeout(() => setFadeOut(true), 2600);
+    const done = setTimeout(() => onFinish(), 3300);
     return () => {
       clearTimeout(hold);
       clearTimeout(done);
@@ -15,16 +15,14 @@ export default function LoadingScreen({ onFinish }) {
   }, [onFinish]);
 
   return (
-    <div className={`loading-screen ${fadeOut ? "fade-out" : ""}`}>
-      <div className="loading-logo">
-        {SITE.logoImage ? (
-          <img src={SITE.logoImage} alt={SITE.title} className="loading-logo-img" />
-        ) : (
-          <span className="loading-logo-text">{SITE.logoText}</span>
-        )}
-      </div>
-      <div className="loading-bar-wrap">
-        <div className="loading-bar" />
+    <div className={`loading-screen${fadeOut ? " fade-out" : ""}`}>
+      <div className="loading-n-wrap">
+        {/* Back layer – unlit N */}
+        <span className="loading-n loading-n-back">{SITE.logoText}</span>
+        {/* Front layer – lit N, revealed left → right */}
+        <span className="loading-n loading-n-front">{SITE.logoText}</span>
+        {/* Shine beam that sweeps left → right */}
+        <div className="loading-n-shine" />
       </div>
     </div>
   );
