@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────
-//  AP-NETFLIX  –  Configuration File
+//  N  –  Configuration File
 //  Edit this file to control the entire app: credentials,
 //  hero banner, and all content rows shown on the home page.
 // ─────────────────────────────────────────────────────────────
@@ -15,8 +15,8 @@ export const AUTH = {
 
 // ── Site Branding ─────────────────────────────────────────────
 export const SITE = {
-  title: "AP Netflix",         // Shown in the browser tab and navbar
-  logoText: "AP",              // Big red logo letter(s) in the navbar
+  title: "N",                  // Shown in the browser tab and navbar
+  logoText: "N",               // Big red logo letter in the navbar
   // logoImage: "/images/logo.png",  // Uncomment to use an image logo instead
 };
 
@@ -24,7 +24,10 @@ export const SITE = {
 // The large feature section at the top of the home page.
 // Use a local path  (e.g. "/images/hero.jpg")  or a full URL.
 export const HERO = {
-  title: "Welcome to AP Netflix",
+  badge: "SERIES",             // Label shown next to the N logo (e.g. "SERIES", "FILM") — leave empty to hide
+  title: "Welcome",
+  subtitle: "",                // Optional second line below the title
+  metadata: [],                // e.g. ["Drama", "2025", "1h 30m", "TV-MA"] — shown as dot-separated row
   description:
     "Your personal collection of photos and videos, beautifully presented.",
   backgroundImage: "", // e.g. "/images/hero.jpg"  — leave empty for gradient
