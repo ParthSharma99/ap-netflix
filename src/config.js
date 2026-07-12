@@ -9,14 +9,14 @@
 // ⚠️  IMPORTANT: Change both values before deploying publicly.
 //     Use a strong password (uppercase + lowercase + numbers + symbols).
 export const AUTH = {
-  username: "admin",
-  password: "Ch@ngeMe#2025!",
+  username: "parnoushka",
+  password: "anoushkaParth2104",
 };
 
 // ── Site Branding ─────────────────────────────────────────────
 export const SITE = {
-  title: "AP Netflix",         // Shown in the browser tab and navbar
-  logoText: "AP",              // Big red logo letter(s) in the navbar
+  title: "Netflix", // Shown in the browser tab and navbar
+  logoText: "N", // Big red logo letter(s) in the navbar
   // logoImage: "/images/logo.png",  // Uncomment to use an image logo instead
 };
 
@@ -24,9 +24,8 @@ export const SITE = {
 // The large feature section at the top of the home page.
 // Use a local path  (e.g. "/images/hero.jpg")  or a full URL.
 export const HERO = {
-  title: "Welcome to AP Netflix",
-  description:
-    "Your personal collection of photos and videos, beautifully presented.",
+  title: "Welcome to Netflix",
+  description: "Watch your videos, beautifully presented.",
   backgroundImage: "", // e.g. "/images/hero.jpg"  — leave empty for gradient
   // backgroundVideo: "/videos/hero.mp4",  // Uncomment to use a looping video
 };
@@ -90,7 +89,7 @@ export const ROWS = [
         id: "v1",
         title: "Sample Video 1",
         type: "video",
-        src: "",                             // e.g. "/videos/clip1.mp4"
+        src: "", // e.g. "/videos/clip1.mp4"
         thumbnail: "https://picsum.photos/seed/vid1/400/225",
         description: "Replace with your own video.",
       },
